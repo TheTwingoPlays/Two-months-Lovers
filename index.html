@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f5eee5">
+  <meta name="description" content="Маленький альбом наших первых двух месяцев.">
+  <title>Два месяца — наша история</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="topbar"><a class="brand" href="#top" aria-label="В начало">нам двоим <span>✳</span></a><span class="top-note">маленький альбом · 01</span></header>
+  <main id="top">
+    <section class="hero section-wrap" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-dot"></span> наши первые два месяца</p>
+        <h1 id="hero-title">Не дата.<br>А <em>всё, что между.</em></h1>
+        <p class="hero-description">Два месяца — вроде совсем немного. А уже столько между нами произошло.</p>
+        <a class="button button-dark" href="#story">Листать альбом <span aria-hidden="true">↓</span></a>
+        <p class="hand-note">Сделал быстренько, как мог, но чтобы было приятно ♡</p>
+      </div>
+      <div class="photo-stack" aria-label="Наша фотография">
+        <div class="photo-back" aria-hidden="true"></div>
+        <figure class="hero-photo"><img src="assets/august-bouquet.jpg" alt="Мы сидим вместе с букетом цветов" fetchpriority="high"><figcaption>Один из наших моментов. Фотка не лучшая, но всё равно наше воспоминание.</figcaption></figure>
+        <span class="photo-sticker" aria-hidden="true">2<br><small>месяца</small></span>
+        <span class="sparkle sparkle-one" aria-hidden="true">✳</span><span class="sparkle sparkle-two" aria-hidden="true">✦</span>
+      </div>
+      <span class="hero-index" aria-hidden="true">12 / 09 — ∞</span>
+    </section>
+
+    <section class="story section-wrap" id="story" aria-labelledby="story-title">
+      <div class="section-heading"><p class="eyebrow">глава первая</p><h2 id="story-title">С чего начались <em>«мы»</em></h2><p>Да, у всех есть момент начала общения и отношений. Но наш случай интересный, так что немного вспомним.</p></div>
+      <div class="timeline">
+        <article class="timeline-card"><span class="timeline-number">01</span><div><p class="card-label">Хахах, не помню: 24 или 25 августа 2026</p><h3>Начало общения</h3><p>Ну, это было интересненько: красиво, под ёлочкой. Я выходил с «Шерифа», выбежала пара девчонок. Я, конечно, испугался, но не растерялся. Так что спасибо тебе за то, что именно ты начала наше общение.</p></div><span class="timeline-icon" aria-hidden="true">☀</span></article>
+        <div class="timeline-line" aria-hidden="true"></div>
+        <article class="timeline-card timeline-card-dark"><span class="timeline-number">02</span><div><p class="card-label">12 сентября 2026</p><h3>Начали встречаться</h3><p>Да уж, этот день стал началом нашего общего пути. Не верится, что прошло уже два месяца. А помнишь, как я признался? Я вот — нет 😅 Ладно, дальше будет проверка, так что не подглядывай. Хотя я знаю, что ты всё помнишь. Всё равно люблю тебя.</p></div><span class="timeline-icon" aria-hidden="true">♡</span></article>
+        <div class="timeline-line" aria-hidden="true"></div>
+        <article class="timeline-card"><span class="timeline-number">03</span><div><p class="card-label">Дата — ну, вроде 12.11.2026</p><h3>Второй месяц отношений</h3><p>Понятия не имею, как пройдёт этот месяц, но хочу, чтобы ты оставалась такой же весёлой и красивой. И вообще — люблю тебя. За эти два месяца ты столько для меня сделала. Мне очень приятно, что ты есть в моей жизни и даришь мне новые эмоции.</p></div><span class="timeline-icon" aria-hidden="true">☀</span></article>
+      </div>
+    </section>
+
+    <section class="questions" id="quiz" aria-labelledby="questions-title">
+      <div class="section-wrap questions-layout">
+        <div class="section-heading"><p class="eyebrow">глава вторая · проверка нашей памяти</p><h2 id="questions-title">А ты помнишь, <em>как всё было?</em></h2><p>Пять коротких вопросов про нашу историю. Выбери вариант и нажми «Проверить». Вопросы и правильные ответы можно подправить под себя.</p>
+          <details class="quiz-editor"><summary>Редактировать вопросы и ответы</summary><p class="editor-note">Измени текст, варианты и правильный ответ. После сохранения скопируй ссылку, чтобы на её телефоне открылся именно твой вариант теста.</p><div class="editor-list" id="editor-list"></div><div class="editor-actions"><button class="editor-save" id="save-quiz" type="button">Сохранить тест</button><button class="editor-share" id="share-quiz" type="button">Скопировать ссылку для неё</button><button class="editor-reset" id="reset-quiz" type="button">Вернуть исходные вопросы</button></div><label class="share-link-label" id="share-link-wrap" hidden>Ссылка с твоими вопросами<input id="quiz-share-url" type="url" readonly></label><p class="editor-status" id="editor-status" aria-live="polite"></p></details>
+        </div>
+        <div class="quiz-panel" aria-live="polite">
+          <div id="quiz-play"><div class="quiz-progress"><p class="question-counter" id="quiz-counter">ВОПРОС 1 / 5</p><div class="progress-track"><span id="quiz-progress-fill"></span></div></div><h3 class="quiz-question" id="quiz-question"></h3><div class="quiz-options" id="quiz-options" role="group" aria-label="Варианты ответа"></div><p class="quiz-feedback" id="quiz-feedback" aria-live="polite"></p><div class="quiz-controls"><button class="check-button" id="check-answer" type="button">Проверить ответ <span aria-hidden="true">✓</span></button><button class="next-button" id="quiz-next" type="button" hidden>Дальше <span aria-hidden="true">→</span></button></div></div>
+          <div class="quiz-result" id="quiz-result" hidden><p class="question-counter">НАША МАЛЕНЬКАЯ ПРОВЕРКА</p><h3 id="quiz-score-title"></h3><p id="quiz-score-copy"></p><label class="result-label" for="quiz-summary">Твои ответы</label><textarea id="quiz-summary" name="Результаты теста" class="quiz-summary" rows="6" readonly></textarea><button class="telegram-copy-button" id="copy-quiz-telegram" type="button">Скопировать, чтобы отправить в Telegram <span aria-hidden="true">↗</span></button><p class="privacy-note" id="telegram-copy-status" aria-live="polite">Скопируй результат и просто скинь его мне в Telegram :))</p><button class="check-button" id="quiz-restart" type="button">Пройти ещё раз ↺</button><form class="quiz-email-form" id="quiz-email-form" action="https://formsubmit.co/ajax/dimabora824@gmail.com" method="POST"><input type="hidden" name="_subject" value="Результат мини-теста про нас"><input type="hidden" name="Результаты теста" id="quiz-email-summary"><input type="text" name="_honey" class="honeypot" tabindex="-1" autocomplete="off" aria-hidden="true"><label class="consent"><input id="quiz-consent" type="checkbox" required><span>Или отправь результат на dimabora824@gmail.com через FormSubmit.</span></label><button class="send-button" id="send-quiz-result" type="submit">Отправить результат Диме <span aria-hidden="true">↗</span></button><p class="privacy-note" id="quiz-send-status" aria-live="polite">Отправка по почте необязательна.</p><p class="privacy-note">При первой отправке подтверди форму по письму от FormSubmit — после этого результаты будут приходить на почту.</p></form></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="album section-wrap" id="album" aria-labelledby="album-title"><div class="album-heading"><div><p class="eyebrow">глава третья · наши кадры</p><h2 id="album-title">Маленький <em>альбом</em></h2></div><p>Несколько мгновений, которые хочется оставить рядом. Нажми на снимок, чтобы рассмотреть его.</p></div><div class="album-grid">
+      <button class="album-item album-item-tall" type="button" data-photo="assets/gallery-bouquet-evening.jpg" data-caption="Тот вечер и цветы"><img src="assets/gallery-bouquet-evening.jpg" alt="Мы сидим рядом с букетом цветов" loading="lazy"><span>тот вечер и цветы <i>↗</i></span></button>
+      <button class="album-item" type="button" data-photo="assets/gallery-bouquet-smile.jpg" data-caption="Поймал твою улыбку"><img src="assets/gallery-bouquet-smile.jpg" alt="Ты улыбаешься с букетом, а я смотрю на тебя" loading="lazy"><span>поймал твою улыбку <i>↗</i></span></button>
+      <button class="album-item" type="button" data-photo="assets/gallery-close-together.jpg" data-caption="Просто быть рядом"><img src="assets/gallery-close-together.jpg" alt="Мы сидим рядом, прижавшись друг к другу" loading="lazy"><span>просто быть рядом <i>↗</i></span></button>
+      <button class="album-item album-item-wide" type="button" data-photo="assets/gallery-lift-at-sunset.jpg" data-caption="Закат, который запомнился"><img src="assets/gallery-lift-at-sunset.jpg" alt="Я держу тебя на руках на фоне заката у воды" loading="lazy"><span>закат, который запомнился <i>↗</i></span></button>
+      <button class="album-item" type="button" data-photo="assets/gallery-riverside-hug.jpg" data-caption="Наш тихий момент у воды"><img src="assets/gallery-riverside-hug.jpg" alt="Мы обнялись и смотрим на закат у воды" loading="lazy"><span>наш тихий момент <i>↗</i></span></button>
+      <button class="album-item" type="button" data-photo="assets/gallery-together-portrait.jpg" data-caption="Мы вдвоём"><img src="assets/gallery-together-portrait.jpg" alt="Мы стоим рядом на фоне вечернего неба и воды" loading="lazy"><span>мы вдвоём <i>↗</i></span></button>
+    </div></section>
+    <dialog class="photo-viewer" id="photo-viewer" aria-label="Фотография из альбома"><button class="viewer-close" id="viewer-close" type="button" aria-label="Закрыть фотографию">×</button><img id="viewer-image" alt=""><p id="viewer-caption"></p></dialog>
+
+    <section class="date-section section-wrap" aria-labelledby="date-title">
+      <div class="date-copy"><p class="eyebrow">глава третья · продолжение следует</p><h2 id="date-title">Наше следующее <em>маленькое приключение</em></h2><p>Выбери настроение для следующего свидания. Решение можно поменять — это просто идея, с которой можно начать.</p></div>
+      <div class="date-options" role="group" aria-label="Выбери идею свидания">
+        <button class="date-option" data-date="Прогуляться без маршрута" type="button"><span>01</span><b>Погулять без маршрута</b><small>куда глаза глядят</small><i>↗</i></button>
+        <button class="date-option" data-date="Устроить вечер вкусняшек и фильма" type="button"><span>02</span><b>Вкусняшки и фильм</b><small>уютный вечер дома</small><i>↗</i></button>
+        <button class="date-option" data-date="Найти новое место вдвоём" type="button"><span>03</span><b>Найти новое место</b><small>маленькое открытие</small><i>↗</i></button>
+      </div>
+      <p class="date-confirmation" id="date-confirmation" aria-live="polite">Пока просто выбери, чего хочется ♡</p>
+    </section>
+
+    <section class="ending section-wrap"><div class="ending-card"><div class="ending-dates" aria-label="Примерно 25 августа начали общаться; 12 сентября начали встречаться"><p>12<small>СЕНТЯБРЯ</small></p><span aria-hidden="true">→</span><p>12<small>НОЯБРЯ</small></p><b>2026</b></div><div><p class="eyebrow">конец альбома · начало дальше</p><h2>Мне нравится,<br><em>что это именно мы.</em></h2><p>Спасибо за эти два месяца. Хочу собирать с тобой ещё много таких маленьких моментов.</p><a href="#top" class="text-link">Перелистать сначала ↑</a></div><span class="ending-heart" aria-hidden="true">♡</span></div><p class="signoff">твой Муница Димка</p></section>
+  </main>
+  <footer class="footer"><span>сделано своими дырявыми руками и с любовью</span><span>два месяца — только первая глава ♡</span></footer>
+</body>
+</html>
